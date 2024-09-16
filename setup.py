@@ -1,7 +1,7 @@
 from setuptools import setup, find_packages
 
 setup(
-    name="thermal_simulation",
+    name="thermal_network",
     version="0.3",
     packages=find_packages(),
     install_requires=[
