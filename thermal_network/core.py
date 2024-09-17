@@ -113,7 +113,7 @@ def eliminate_pre_simulation_data(data, pre_simulation_time_step):
 
 def TDMA(Construction, T, T_L, T_R, t):
     N = Construction.N
-    dx, = Construction.dx()
+    dx = Construction.dx()
     K_L, K_R = Construction.K_L(), Construction.K_R()
     C = Construction.C()
     a_list = [-t*K_L[i] for i in range(N)]
