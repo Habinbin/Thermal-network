@@ -77,11 +77,18 @@ class SetConstruction:
         C = np.array([self.layer_lst[Lidx].C for Lidx in range(self.lN) for _ in range(self.div_lst[Lidx])])  # Volumetric heat capacity [J/m^3K]
         return C
 
-def D2K(Degree):  # Degree to Kelvin
-    return Degree + 273.15
+## Temperature conversion
+def C2K(temp_C):
+    return temp_C + 273.15
 
-def K2D(Kelvin):  # Kelvin to Degree
-    return Kelvin - 273.15
+def K2C(temp_K):
+    return temp_K - 273.15
+
+def F2C(temp_F):
+    return (temp_F - 32) * 5 / 9
+
+def C2F(temp_C):
+    return temp_C * 9 / 5 + 32
 
 def arr2df(arr):  # Array to DataFrame
     return pd.DataFrame(arr)
