@@ -1,6 +1,6 @@
 import math
 from datetime import datetime
-from . import constant as c
+import constant as c
 
 
 # 각도 단위 변경

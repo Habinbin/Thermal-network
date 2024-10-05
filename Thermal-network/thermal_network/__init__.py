@@ -1,4 +1,4 @@
 from .constant import *
 from .core import *
-from .solar_calculation import *
+from .radiation import *
 from .convection import *
