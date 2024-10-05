@@ -1,8 +1,8 @@
 import numpy as np
 import pandas as pd
-import convection as cv
-import radiation as rd
-import constant as c
+from .import convection as cv
+from .import radiation as rd
+from .import constant as c
 from tqdm import tqdm
 import thermal_network as tn
 
